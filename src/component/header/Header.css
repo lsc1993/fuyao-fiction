@@ -1,0 +1,58 @@
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    z-index: 20;
+}
+.header-wrapper {
+    position: relative;
+    height: 100px;
+    line-height: 100px;
+}
+
+.name-container {
+    display: inline-block;
+}
+
+.name-container img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+}
+
+.name-container p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.my-book-list-wrapper {
+    position: relative;
+    float: right;
+}
+
+.my-book-list-container {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.my-book-list-container p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    border: 1px solid #d0d0d0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.my-book-list-container p:hover {
+    cursor: pointer;
+    background-color: #EEB422;
+}

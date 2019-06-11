@@ -1,0 +1,98 @@
+.register-container {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 60%;
+    height: auto;
+}
+
+.register-wrapper {
+    width: 330px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.register-wrapper h4 {
+    font-size: 20px;
+    text-align: left;
+}
+
+.operator-container {
+    width: 350px;
+}
+
+.operator-container p {
+    display: inline-block;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+.operator-container a {
+    color: #000000;
+}
+
+.operator-container p:hover {
+    cursor: pointer;
+    color: #EEB422;
+}
+
+.text-left {
+    float: left;
+}
+
+.text-right {
+    float: right;
+}
+
+.register-button {
+    width: 350px;
+    height: 50px;
+    border: hidden;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.register-button-enable {
+    background: #d40f0f;
+}
+
+.register-button-disable {
+    background: #dedede;
+}
+
+.regeister-check-container {
+    position: relative;
+    width: 350px;
+    height: 45px;
+}
+
+.check-text-container {
+    position: relative;
+    width: 250px;
+    height: 45px;
+    display: inline-block;
+}
+
+.regeister-check-container button {
+    position: relative;
+    width: 96px;
+    height: 42px;
+    display: inline-block;
+    background: #d40f0f;
+    border: hidden;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.regeister-check-text {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 16px;
+    transition: 0.3s ease;
+    color: #aaaaaa;
+    background: #ffffff;
+    opacity: 1;
+    z-index: -1;
+}
