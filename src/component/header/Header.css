@@ -4,25 +4,29 @@
     left: 0;
     right: 0;
     width: 100%;
-    height: auto;
-    background: #ffffff;
     z-index: 20;
 }
 .header-wrapper {
     position: relative;
-    height: 100px;
-    line-height: 100px;
+    display: inline-flexbox;
+    height: 80px;
+    max-width: 1200px;
+    background: #aba5a4;
+    margin: auto;
 }
 
 .name-container {
-    display: inline-block;
+    position: relative;
+    float: left;
+    width: auto;
+    height: 100%;
 }
 
 .name-container img {
     display: inline-block;
     vertical-align: middle;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 
 .name-container p {
@@ -35,10 +39,14 @@
 .my-book-list-wrapper {
     position: relative;
     float: right;
+    width: auto;
+    height: 90px;
 }
 
 .my-book-list-container {
     display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
     height: 40px;
     line-height: 40px;
 }

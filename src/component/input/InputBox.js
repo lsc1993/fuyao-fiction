@@ -9,7 +9,7 @@ class InputBox extends React.Component {
     render() {
         return (
             <div class="input-container"> 
-                <input placeholder={this.props.placeholder} />
+                <input placeholder={this.props.placeholder} type={this.props.type} />
             </div>
         );
     }

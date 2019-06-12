@@ -10,9 +10,9 @@ class Register extends React.Component {
                     <div class="register-wrapper">
                         <h4>注册</h4>
                         <div>
-                            <InputBox placeholder="账号:6-15位字母、数字组合"/>
-                            <InputBox placeholder="密码:6-20位字母、数字组合"/>
-                            <InputBox placeholder="确认密码"/>
+                            <InputBox placeholder="账号:6-15位字母、数字组合" type="text"/>
+                            <InputBox placeholder="密码:6-20位字母、数字组合" type="password"/>
+                            <InputBox placeholder="确认密码" type="password"/>
                             <div class="operator-container">
                                 <p class="text-left">已有账号?直接登录</p>
                             </div>

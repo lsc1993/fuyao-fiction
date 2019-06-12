@@ -11,8 +11,8 @@ class Login extends React.Component {
                     <div class="login-wrapper">
                         <h4>登录</h4>
                         <div>
-                            <InputBox placeholder="账号"/>
-                            <InputBox placeholder="密码"/>
+                            <InputBox placeholder="账号" type="text"/>
+                            <InputBox placeholder="密码" type="password"/>
                             <div class="operator-container">
                                 <p class="text-left">注册</p>
                                 <p class="text-right">忘记密码</p>

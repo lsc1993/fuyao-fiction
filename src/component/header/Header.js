@@ -16,7 +16,7 @@ class Header extends React.Component {
     render() {
         return (
             <div class="fixed-header">
-                <div class="hreader-wrapper">
+                <div class="header-wrapper">
                     <div class="name-container">
                         <img src={logo} />
                         <p>扶摇中文网</p>
@@ -26,7 +26,6 @@ class Header extends React.Component {
                             <p>我的书架</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         );
