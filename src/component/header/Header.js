@@ -1,6 +1,7 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './Header.css';
-import logo from '../../logo.svg'
+import logo from '../../logo.svg';
 
 class Header extends React.Component {
     constructor(props) {
@@ -19,11 +20,11 @@ class Header extends React.Component {
                 <div class="header-wrapper">
                     <div class="name-container">
                         <img src={logo} />
-                        <p>扶摇中文网</p>
+                        <Link to="/"><p>扶摇中文网</p></Link>
                     </div>
                     <div class="my-book-list-wrapper">
                         <div class="my-book-list-container">
-                            <p>我的书架</p>
+                            <Link to="login"><p>我的书架</p></Link>
                         </div>
                     </div>
                 </div>

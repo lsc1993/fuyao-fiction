@@ -1,6 +1,7 @@
 import React from 'react';
-import Header from '../../component/header/Header'
-import './Home.css'
+import Header from '../../component/header/Header';
+import './Home.css';
+import {Button} from 'antd-mobile';
 
 class Home extends React.Component {
 
@@ -28,6 +29,7 @@ class Home extends React.Component {
                                 </ul>
                             </div>
                         </div>
+                        <Button type="primary" size="small">start</Button>
                     </div>
                 </div>
             </div>
