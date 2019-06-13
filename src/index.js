@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Route from './router/Router'
-import Home from './page/home/Home'
 import * as serviceWorker from './serviceWorker';
 
 const render = Component => {

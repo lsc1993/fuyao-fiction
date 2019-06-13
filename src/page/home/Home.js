@@ -1,35 +1,90 @@
 import React from 'react';
 import Header from '../../component/header/Header';
+import CardItem from '../../component/common/CardItem'
 import './Home.css';
-import {Button} from 'antd-mobile';
+import { Carousel, WingBlank, Tabs, Badge, Grid } from 'antd-mobile';
+import preview from '../../res/img/preview.jpg'
+import preview1 from '../../res/img/preview1.jpg'
+import preview2 from '../../res/img/preview2.jpg'
+
+const tabs = [
+    { title: <Badge>悬疑</Badge> },
+    { title: <Badge>恐怖</Badge> },
+    { title: <Badge>网游</Badge> },
+    { title: <Badge>都市</Badge> },
+    { title: <Badge>玄幻</Badge> },
+];
+
+const data1 = Array.from(new Array(9)).map(() => ({
+    icon: 'https://gw.alipayobjects.com/zos/rmsportal/WXoqXTHrSnRcUwEaQgXJ.png',
+  }));
 
 class Home extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            imgUrl: [preview, preview1, preview2],
+            imgHeight: 176
+        }
+    }
+
+    bookItem() {
+        return(
+            <div className="home-book-card-container">
+                <CardItem title="我要修仙" desc="我要修仙我要修仙我要修仙我要修仙我要修仙" imgUrl={preview}/>
+            </div>
+        );
+    }
 
     render() {
         return (
             <div>
                 <Header />
-                <div class="home-wrapper">
-                    <div class="home-container">
-                        <div>
-                            <img src={require("../../res/img/preview.jpg")} />
+                <div className="home-wrapper">
+                    <div className="home-container">
+                        <div className="home-carousel-container">
+                            <WingBlank>
+                                <Carousel className="home-space-carousel"
+                                  autoplay
+                                  infinite
+                                  beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
+                                  afterChange={index => this.setState({slideIndex: index})} 
+                                >
+                                    {
+                                        this.state.imgUrl.map((val, index) => (
+                                            <a key={val} href="#">
+                                                  <img src={val} alt=""/>
+                                            </a>
+                                        ))
+                                    }
+                                </Carousel>
+                            </WingBlank>
                         </div>
-                        <div class="home-book-type-container">
-                            <div class="home-book-type-title">
+                        <div className="home-book-type-container">
+                            {/* <div className="home-book-type-title">
                                 <p>作品分类</p>
-                            </div>
-                            <div class="home-book-type-content">
-                                <ul>
-                                    <li><p>悬疑</p></li>
-                                    <li><p>悬疑</p></li>
-                                    <li><p>悬疑</p></li>
-                                    <li><p>悬疑</p></li>
-                                    <li><p>悬疑</p></li>
-                                    <li><p>悬疑</p></li>
-                                </ul>
+                            </div> */}
+                            <div className="home-book-type-content">
+                                <Tabs tabs={tabs} initialPage={1}>
+                                    <div className="home-book-list-container">
+                                        <Grid data={data1} columnNum={4} activeStyle={false} hasLine={false} renderItem={this.bookItem} />
+                                    </div>
+                                    <div className="home-book-list-container">
+                                        <Grid data={data1} columnNum={4} hasLine={false}/>
+                                    </div>
+                                    <div className="home-book-list-container">
+                                        <Grid data={data1} columnNum={4} hasLine={false}/>
+                                    </div>
+                                    <div className="home-book-list-container">
+                                        <Grid data={data1} columnNum={4} hasLine={false}/>
+                                    </div>
+                                    <div className="home-book-list-container">
+                                        <Grid data={data1} columnNum={4} hasLine={false}/>
+                                    </div>
+                                </Tabs>
                             </div>
                         </div>
-                        <Button type="primary" size="small">start</Button>
                     </div>
                 </div>
             </div>

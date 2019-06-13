@@ -11,14 +11,18 @@
     display: inline-flexbox;
     height: 80px;
     max-width: 1200px;
-    background: #aba5a4;
+    background: #ffffff;
     margin: auto;
+}
+
+.header-wrapper a {
+    color: black;
 }
 
 .name-container {
     position: relative;
     float: left;
-    width: auto;
+    width: 300px;
     height: 100%;
 }
 
@@ -32,6 +36,7 @@
 .name-container p {
     display: inline-block;
     vertical-align: middle;
+    width: 100px;
     margin-left: 20px;
     font-size: 20px;
 }

@@ -1,0 +1,11 @@
+.card-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.card-container img {
+    width: 100px;
+    height: 100px;
+}
