@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../component/header/Header';
-import CardItem from '../../component/common/CardItem'
+import Card from '../../component/common/Card'
 import './Home.css';
 import { Carousel, WingBlank, Tabs, Badge, Grid } from 'antd-mobile';
 import preview from '../../res/img/preview.jpg'
@@ -25,14 +25,15 @@ class Home extends React.Component {
         super(props);
         this.state = {
             imgUrl: [preview, preview1, preview2],
-            imgHeight: 176
+            imgHeight: 176,
+            columnNum: 5,
         }
     }
 
     bookItem() {
         return(
             <div className="home-book-card-container">
-                <CardItem title="我要修仙" desc="我要修仙我要修仙我要修仙我要修仙我要修仙" imgUrl={preview}/>
+                <Card title="我要修仙" desc="我要修仙我要修仙我要修仙我要修仙我要修仙" imgUrl={preview}/>
             </div>
         );
     }
@@ -68,19 +69,19 @@ class Home extends React.Component {
                             <div className="home-book-type-content">
                                 <Tabs tabs={tabs} initialPage={1}>
                                     <div className="home-book-list-container">
-                                        <Grid data={data1} columnNum={4} activeStyle={false} hasLine={false} renderItem={this.bookItem} />
+                                        <Grid data={data1} columnNum={this.state.columnNum} activeStyle={false} hasLine={false} renderItem={this.bookItem} />
                                     </div>
                                     <div className="home-book-list-container">
-                                        <Grid data={data1} columnNum={4} hasLine={false}/>
+                                        <Grid data={data1} columnNum={this.state.columnNum} hasLine={false}/>
                                     </div>
                                     <div className="home-book-list-container">
-                                        <Grid data={data1} columnNum={4} hasLine={false}/>
+                                        <Grid data={data1} columnNum={this.state.columnNum} hasLine={false}/>
                                     </div>
                                     <div className="home-book-list-container">
-                                        <Grid data={data1} columnNum={4} hasLine={false}/>
+                                        <Grid data={data1} columnNum={this.state.columnNum} hasLine={false}/>
                                     </div>
                                     <div className="home-book-list-container">
-                                        <Grid data={data1} columnNum={4} hasLine={false}/>
+                                        <Grid data={data1} columnNum={this.state.columnNum} hasLine={false}/>
                                     </div>
                                 </Tabs>
                             </div>

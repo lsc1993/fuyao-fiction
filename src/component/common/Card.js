@@ -2,7 +2,7 @@ import React from 'react';
 import { Flex } from 'antd-mobile';
 import preview from '../../res/img/preview.jpg'
 
-export default class CardItem extends React.Component {
+export default class Card extends React.Component {
 
     render() {
         return(
