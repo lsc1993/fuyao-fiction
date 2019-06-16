@@ -1,0 +1,50 @@
+.book-detail-container {
+    position: relative;
+    margin-top: 5rem;
+}
+
+.book-desc-container {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.book-desc-container p {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    color: #555555;
+}
+
+.book-desc-title {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    border-top: 0.1rem solid #d40f0f;
+}
+
+.book-desc-title h5 {
+    position: relative;
+    line-height: 2rem;
+}
+
+.book-section-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.book-section-container:hover {
+    cursor: pointer;
+}
+
+.book-section-list {
+    flex-basis: initial;
+    margin: 0 auto;
+}
+
+.book-section-list:hover {
+    cursor: pointer;
+}
+
+.book-section-list-item {
+    padding: 0;
+}

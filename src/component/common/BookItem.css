@@ -1,0 +1,75 @@
+.book-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.book-container:hover {
+    cursor: pointer;
+}
+
+.book-img-container {
+    position: relative;
+    height: 100%;
+}
+
+.book-img-container img {
+    width: 6rem;
+    height: 95%;
+    min-height: 8rem;
+    border-radius: 5px;
+}
+
+.book-title-container {
+    position: relative;
+}
+
+.book-title {
+    position: relative;
+    text-align: left;
+    height: 100%;
+}
+
+.book-title p {
+    font-size: 1.1rem;
+    font: bolder;
+    color: #555555;
+}
+
+.book-desc {
+    position: relative;
+    text-align: left;
+}
+
+.book-desc p {
+    width: 100%;
+    font-size: 14px;
+    color: #ABABAB;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+.book-author-and-type {
+    position: relative;
+}
+
+.book-author {
+    line-height: 1.8em;
+    font-size: 14px;
+    color: #b8b8b8;
+}
+
+.book-type {
+    line-height: 1.5em;
+    font-size: 14px;
+    color: #b8b8b8;
+    padding: 2px;
+    border: 1px solid #b8b8b8;
+    border-radius: 2px;
+}
+
+.book-type:hover {
+    cursor: pointer;
+    color: #d40f0f;
+    border: 1px solid #d40f0f;
+}
