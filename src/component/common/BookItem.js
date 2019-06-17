@@ -24,8 +24,14 @@ export default class BookItem extends React.Component {
                                     <p>{this.props.desc}</p>
                                 </div>
                                 <div className="book-author-and-type">
-                                    <p className="book-author">{this.props.author}</p>
-                                    <p className="book-type">{this.props.type}</p>
+                                    <Row>
+                                        <Col xl={6} lg={6} md={6} xs={12}>
+                                            <p className="book-author">{this.props.author}</p>
+                                        </Col>
+                                        <Col xl={6} lg={6} md={6} xs={12}>
+                                            <p className="book-type">{this.props.type}</p>
+                                        </Col>
+                                    </Row>
                                 </div>
                             </div>
                         </Col>
