@@ -52,7 +52,7 @@ export default class BookDetail extends React.Component {
                             <p>他企图用先进的思想和行动唤醒中国这条沉睡的巨龙，四十年付出为封建的中国点亮了一丝近代化的曙光，埋下了近代化企业的种子，他用自己奋斗的故事谱写了一部励志史诗！</p>
                         </div>
                         <div>
-
+                            
                         </div>
                         <div className="book-desc-title">
                             <h5>章节列表</h5>
