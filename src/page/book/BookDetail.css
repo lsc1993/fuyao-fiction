@@ -14,14 +14,14 @@
     color: #555555;
 }
 
-.book-desc-title {
+.book-detial-sub-title {
     width: 100%;
     height: 2rem;
     line-height: 2rem;
     border-top: 0.1rem solid #d40f0f;
 }
 
-.book-desc-title h5 {
+.book-detial-sub-title h5 {
     position: relative;
     line-height: 2rem;
 }
@@ -29,7 +29,7 @@
 .book-section-container {
     position: relative;
     width: 100%;
-    height: 100%;
+    margin-top: 2rem;
 }
 
 .book-section-container:hover {
@@ -47,4 +47,14 @@
 
 .book-section-list-item {
     padding: 0;
+}
+
+.book-audio-play-container {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.book-audio-play-container img {
+    width: 1.5rem;
+    height: 1.5rem;
 }
